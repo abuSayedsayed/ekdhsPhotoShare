@@ -1,0 +1,49 @@
+body {
+	font-family: 'Hind Siliguri', sans-serif;
+}
+.image_container {
+	width: 100%;
+	height: auto;
+	box-shadow: 9px 39px 42px 0px #9c9c9c;
+}
+
+.image_container > img {
+	width: 100%;
+	height: 100%;
+	user-select: none;
+	object-fit: cover;
+}
+.img_opt {
+	user-select: none;
+	background-color: rgb(168 168 168);
+}
+
+.flow {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 1rem;
+}
+.logged-in-link,
+.logged-out-link {
+	display: none;
+}
+
+.loading_img {
+	width: 30%;
+}
+
+.motive_icon {
+	font-size: 1.8rem;
+	padding: 0.2rem 0.8rem;
+	color: #c0c0c0;
+}
+
+.motive_text {
+	font-size: 1.5rem;
+	font-weight: 500;
+	padding: 1rem 0rem;
+	margin: 2rem 0rem;
+	color: #484646;
+}

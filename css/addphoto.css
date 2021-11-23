@@ -1,0 +1,15 @@
+.showImage {
+	margin: 0.7rem 0rem;
+	background-color: rgb(173, 173, 173);
+	user-select: none;
+}
+.showImage > center {
+	border: 0.3rem dashed rgb(124, 124, 124);
+	padding: 1.2rem 2rem;
+	cursor: pointer;
+}
+.userSelectedImage {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

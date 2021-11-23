@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ekdhs Batch 2021</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./css/main.css" />
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+			rel="stylesheet"
+		/>
+		<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4"></div>
+				<div class="col-lg-4 bg-light p-3 my-md-5 my-2 rounded">
+					<form action="#" id="sign-in">
+						<h3 class="my-2 text-center">
+							<span class="text-danger">Please</span> Sign In
+						</h3>
+						<div class="my-3">
+							<label for="email " class="mb-2">Input Your Email</label>
+							<input
+								required
+								type="email"
+								id="email"
+								class="form-control"
+								name="email"
+							/>
+						</div>
+						<div class="my-3">
+							<label for="email " class="mb-2"> Input Your Name</label>
+							<input
+								required
+								type="text"
+								id="name"
+								class="form-control"
+								name="name"
+							/>
+						</div>
+						<div class="my-3">
+							<label for="password" class="mb-2"> Password</label>
+							<input
+								required
+								type="password"
+								id="password"
+								class="form-control"
+								name="password"
+							/>
+						</div>
+						<div class="my-2">
+							<button class="btn btn-danger" type="submit">Sign In</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-lg-4"></div>
+			</div>
+		</div>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+
+		<script type="module">
+			// Import the functions you need from the SDKs you need
+			import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js'
+			// TODO: Add SDKs for Firebase products that you want to use
+			// https://firebase.google.com/docs/web/setup#available-libraries
+
+			// Your web app's Firebase configuration
+			const firebaseConfig = {
+				apiKey: 'AIzaSyDXR1zkKQXTcCHNwPZLxCCIuZh8rAEJWmE',
+				authDomain: 'photosharingapp-828c1.firebaseapp.com',
+				projectId: 'photosharingapp-828c1',
+				storageBucket: 'photosharingapp-828c1.appspot.com',
+				messagingSenderId: '160636035684',
+				appId: '1:160636035684:web:d5b1ec362a28126be9f571',
+			}
+
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig)
+		</script>
+
+		<script src="./js/signin.js" type="module"></script>
+	</body>
+</html>
