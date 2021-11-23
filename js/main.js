@@ -60,7 +60,7 @@ db.collection('all_images').get()
     allImages.forEach(image => {
         const imageData=image.data()
         allImageHtml+=`
-        <div class="col-md-4 my-md-0 my-3 single_image rounded">
+        <div class="col-md-4  my-3 single_image rounded">
 					<div class="image_container">
 						<img src=${imageData.imgLink} alt="test_photo" />
 					</div>
