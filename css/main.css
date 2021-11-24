@@ -47,3 +47,23 @@ body {
 	margin: 2rem 0rem;
 	color: #484646;
 }
+
+.heart-icon {
+	cursor: pointer;
+	transition: 0.3s ease-in 0.2s;
+}
+.heart-bloom {
+	transition: 0.1s ease-in 0.1s;
+	animation: zoomIn 0.3s ease-in 1;
+}
+
+@keyframes zoomIn {
+	0% {
+		transform: scale(1);
+		box-shadow: none;
+	}
+	100% {
+		transform: scale(1.7);
+		box-shadow: 2px 2px 5px 1px #dc3545;
+	}
+}

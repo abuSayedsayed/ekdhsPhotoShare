@@ -49,9 +49,15 @@ logOutBtn.addEventListener('click',function(){
 })
 
 
+// Adding Love react option to the dom and increasing the number of reacts in the database
+
+
+
+
 
 
 // Getting Firebase Data And Show Images To The Dom With Heart And Download Option
+// Function For Uploading All Images To Ui
 
 db.collection('all_images').get()
 .then(snapshot=>{
@@ -68,7 +74,7 @@ db.collection('all_images').get()
 						class="img_opt py-2 px-3 d-flex justify-content-between "
 					>
 						<div class="heart_container">
-							<i class="far fa-heart text-danger"></i>
+							<i class="far fa-heart text-danger heart-icon" id="${image.id}" onclick="heartIncrease(event)"></i>
 							<span class="ms-3 heartNbr">${imageData.heartTaken}</span>
 						</div>
 						<div class="download d-flex">
@@ -82,14 +88,22 @@ db.collection('all_images').get()
 					</div>
 		</div>
         
-        
-        
-        
         `
-        console.log(imageData);
+        
     });
     mainContent.innerHTML=allImageHtml
 })
 .catch(err=>console.log(err))
 
-// Function For Uploading All Images To Ui
+
+
+
+// heartIcons.forEach( heartIcon=> {
+//     heartIcon.addEventListener('click',function(event){
+//         heartIcon.className='fab fa-heart text-danger heart-icon heart-bloom'
+//         let heartNbr=event.target.nextElementSibling.innerText
+//         heartNbr.innerText=++(Number.parseInt(heartNbr))
+//         console.log('Heart Clicked');
+//     })
+    
+// });
