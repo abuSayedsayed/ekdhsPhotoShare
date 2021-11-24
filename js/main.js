@@ -72,9 +72,9 @@ db.collection('all_images').get()
 							<span class="ms-3 heartNbr">${imageData.heartTaken}</span>
 						</div>
 						<div class="download d-flex">
-                        <a href="${imageData.imgLink}" class="me-3 text-muted" target="_blank" download="${new Date().toLocaleDateString()} From PhotoShare App Built By Abu Sayed" class="text-danger"
+                        <a href="${imageData.imgLink}" class="me-3 text-muted" class="text-danger"
 								><i class="fas fa-compress"></i></a>
-							<a href="${imageData.imgLink}" target="_blank" download="${new Date().toLocaleDateString()} From PhotoShare App Built By Abu Sayed" class="text-danger"
+							<a href="${imageData.imgLink}" download="${new Date().toLocaleDateString()} From PhotoShare App Built By Abu Sayed" class="text-danger"
 								><i class="fas fa-level-down-alt"></i
 							></a>
 							
