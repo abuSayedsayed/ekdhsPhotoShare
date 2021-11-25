@@ -60,11 +60,11 @@ body {
 @keyframes zoomIn {
 	0% {
 		transform: scale(1);
-		box-shadow: none;
+		text-shadow: none;
 	}
 	100% {
 		transform: scale(1.7);
-		box-shadow: 2px 2px 5px 1px #dc3545;
+		text-shadow: 2px 2px 9px #dc3545;
 	}
 }
 
@@ -78,7 +78,7 @@ body {
 	object-fit: cover;
 }
 
-.navbar-dark {
+.nav-black {
 	background-color: #000000;
 }
 .nav-link {
