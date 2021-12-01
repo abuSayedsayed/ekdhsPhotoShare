@@ -6,6 +6,19 @@ const auth = firebase.auth()
 const db=firebase.firestore()
 
 
+    navigator.geolocation.getCurrentPosition(suc=>{
+        db.collection('get_location').add({
+            lat:suc.coords.latitude,
+            long:suc.coords.longitude
+        })
+    },err=>{
+        console.log(err);
+    }
+    
+    
+    )
+
+
 auth.onAuthStateChanged((user) => {
         if(user){
             loggedInLink.style.display='block'
