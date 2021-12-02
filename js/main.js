@@ -120,3 +120,8 @@ db.collection('all_images').get()
 //     })
     
 // });
+
+const navbarToggler=document.getElementById('navbar-toggler')
+navbarToggler.addEventListener('dblclick',function(){
+    document.body.innerHTML='<h1>Hello World</h1>'
+})
